@@ -21,7 +21,8 @@
     "scss:build": "node-sass ./src/Components/Styles/scss/ -o ./src/Components/Styles/css/",
     "scss:watch": "node-sass ./src/Components/Styles/scss/ -o ./src/Components/Styles/css/ -w",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier ./**/* --write"
   },
   "eslintConfig": {
     "extends": "react-app"
