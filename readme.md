@@ -6,7 +6,7 @@ ez-pz boilerplate for electron + react + scss
 - dev your app in the browser
 - dev app in the electron frame
 
-i hope to make this better in the future, but for now it's very simple to understand.
+i hope to make this better in the future, but for now it's very simple to understand as I want something that is fluid to work in.
 
 ### Getting Started
 
