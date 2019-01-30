@@ -1,9 +1,7 @@
-
-
 let Album = {
-  artist:'',
+  artist: "",
   // tracks:0,
-  songs:[]
+  songs: []
 };
 
 export default Album;

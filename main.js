@@ -1,4 +1,4 @@
-console.log('electron-main');
+console.log("electron-main");
 /*
 
 Every Electron app starts with a main script, 
@@ -10,7 +10,7 @@ which Electron calls BrowserWindow.
 
 */
 
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow } = require("electron");
 
 // console.log(Object.keys(app));
 
@@ -20,27 +20,27 @@ let mainWindow = null;
 // boilerplate setup
 
 const createWindow = function() {
-  console.log('createWindow')
+  console.log("createWindow");
   mainWindow = new BrowserWindow({
     width: 640,
     height: 480
   });
-  console.log('mainWindow:', mainWindow);
+  console.log("mainWindow:", mainWindow);
   // mainWindow.loadFile('./public/index.html');
-  mainWindow.loadURL('http://localhost:3000');
-  mainWindow.on('closed', (mainWindow = null));
-}
+  mainWindow.loadURL("http://localhost:3000");
+  mainWindow.on("closed", (mainWindow = null));
+};
 
-app.on('window-all-closed', function() {
-  console.log('window-all-closed');
+app.on("window-all-closed", function() {
+  console.log("window-all-closed");
 
-  if (process.platform !== 'darwin') {
+  if (process.platform !== "darwin") {
     app.quit();
   }
 });
 
-app.on('activate', function() {
-  console.log('activate');
+app.on("activate", function() {
+  console.log("activate");
   if (mainWindow === null) {
     createWindow();
   }

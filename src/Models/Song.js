@@ -1,7 +1,5 @@
-import Album from './Album';
+import Album from "./Album";
 
-let Song = {
-
-}
+let Song = {};
 
 export default Song;

@@ -1,6 +1,6 @@
 const User = {
-  avatarUrl: '',
-  name: 'zackmorgs'
-}
+  avatarUrl: "",
+  name: "zackmorgs"
+};
 
 export default User;
